@@ -1,0 +1,89 @@
+<html>
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<head>
+  <title>Salvador Dali</title>
+
+  <script language="JavaScript">
+    // Funny text script by Bart Jellema
+    var hellotext = "Salvador Dali web page designed by evilpitic 2004"
+    var thetext = ""
+    var started = false
+    var step = 0
+    var times = 1
+
+    function welcometext() {
+      times--
+      if (times == 0) {
+        if (started == false) {
+          started = true;
+          window.status = hellotext;
+          setTimeout("anim()", 1);
+        }
+        thetext = hellotext;
+      }
+    }
+
+    function showstatustext(txt) {
+      thetext = txt;
+      setTimeout("welcometext()", 4000)
+      times++
+    }
+
+    function anim() {
+      step++
+      if (step == 7) { step = 1 }
+      if (step == 1) { window.status = '>===' + thetext + '===<' }
+      if (step == 2) { window.status = '=>==' + thetext + '==<=' }
+      if (step == 3) { window.status = '>=>=' + thetext + '=<=<' }
+      if (step == 4) { window.status = '=>=>' + thetext + '<=<=' }
+      if (step == 5) { window.status = '==>=' + thetext + '=<==' }
+      if (step == 6) { window.status = '===>' + thetext + '<===' }
+      setTimeout("anim()", 200);
+    }
+// Funny text script by Bart Jellema -->
+  </script>
+</head>
+
+<body onLoad="welcometext()" bgcolor="black">
+  <bgsound src="star.avi.mp3.wav" loop="0">
+    <br><br><br>
+    <tr>
+      <td><small><small>
+            <font face="Comic Sans Ms" color="silver">
+              <center>
+                <h1>
+                  <font size="5"></font>
+                </h1>
+              </center>
+              <center><img src="animation2.gif"></center>
+    <tr>
+      <td><big><big>
+            <font face="Arial" color="#ffffff"><br><br>
+              <center><img src="graphics/salvador dali.gif"></center><br>
+              <center> CLICK <a href="Dali's index.html">
+                  <FONT COLOR=#00FF00><strong> here </strong></FONT>
+                </A> TO BEGIN </center>
+</body>
+
+</html>

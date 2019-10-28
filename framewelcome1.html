@@ -1,0 +1,108 @@
+<html>
+
+<SCRIPT language=JavaScript>
+	var message = "Copyright�2004 Salvador Dali";
+	function click(e) {
+		if (document.all) {
+			if (event.button == 2) {
+				alert(message);
+				return false;
+			}
+		}
+		if (document.layers) {
+			if (e.which == 3) {
+				alert(message);
+				return false;
+			}
+		}
+	}
+	if (document.layers) {
+		document.captureEvents(Event.MOUSEDOWN);
+	}
+	document.onmousedown = click;
+</SCRIPT>
+
+<head>
+	<title>Frame Layout></title>
+</head>
+
+<body background="wood.jpg">
+	<table background="wood.jpg" width=100% bordercolor="silver">
+		<!-- Center Column -->
+		<td>
+			<center>
+				<table>
+					<tr>
+						<td align=left>
+							<!--  This is where the table begins  -->
+							<table background="nisipiu.jpg">
+								<!-- The first row begins, containing a logo graphic, and the heading of the web page -->
+								<tr>
+									<td colspan=2 align=center>
+										<H1> Salvador Dali's web page </H1><br>
+									</td>
+								</tr>
+								<!--  The second row begins here, containing  a picture and some content -->
+								<tr>
+									<td align=center valign="MIDDLE"><A HREF="DALI 1BIG.HTML"> <IMG
+												SRC="graphics\DALI 1.jpg" HEIGHT=220 WIDTH=300></A></td>
+									<td valign="MIDDLE" align=left> Welcome to my home page, which I have dedicated to
+										El Salvador Dal�. To learn about Dal�'s history, click the 'history' button on
+										the side of the page. If you are interested in criteqical opion on his art,
+										click the 'art' button. <BR> To contact me, click the 'contact me' button. You
+										can either send me an email, or fill out a feed back form.</td>
+								</tr>
+								<!-- The third row begins here, containing, some content and a picture. Notice how the text and pictures are aligned -->
+								<tr>
+									<td valign="MIDDLE" align=left>Salvador Dal� was an Spanish artist during the 20 th
+										century (that is, he painted from about 1944 -1986). I like his work because of
+										its surrealistic quality.<BR>He was a painter, draughtsman, printmaker,
+										designer, sculptor, film-maker,talent for self-publicity made him an
+										international celebrity, but many critics believe that all his best work was
+										produced fairly early in his career.</td>
+									<td valign="MIDDLE" align=center><A HREF="DALI 2BIG.HTML"> <IMG
+												SRC="graphics\DALI 2.jpg" HEIGHT=220 WIDTH=300></A></td>
+								</tr>
+							</table>
+			</center>
+			<br><br>
+		</td>
+		<td align=right valign=top background="Prairie wind.bmp" width=120>
+			<!-- Right Column -->
+			<table align=right border=1 width=100 cellpadding=10 BGCOLOR=#000000>
+				<tr>
+					<td ALIGN=CENTER valign=center align=center>
+						<P ALIGN="LEFT"> <img src="Graphics/ro.gif" width="78" height="34">
+					</td>
+				</tr>
+				<td ALIGN=right valign=right align=right> <img src="Graphics/logo.gif"></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a onmouseOver="document.images[4].src='graphics/salut1.gif'"
+							onmouseOut="document.images[4].src='graphics/welcome1.gif'" href="Welcome1.html"
+							target="mainpage">
+							<img src="Graphics/welcome1.gif" border=0></a></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a a onmouseOver="document.images[5].src='graphics/arta1.gif'"
+							onmouseOut="document.images[5].src='graphics/art1.gif'" href="Art1.html"
+							target="mainpage"><img src="Graphics/art1.gif" border=0></a></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a a onmouseOver="document.images[6].src='graphics/istorie1.gif'"
+							onmouseOut="document.images[6].src='graphics/history1.gif'" href="History1.html"
+							target="mainpage"><img src="Graphics/history1.gif" border=0></a></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a a onmouseOver="document.images[7].src='graphics/contact1.gif'"
+							onmouseOut="document.images[7].src='graphics/contact me1.gif'" href="Contactme.html"
+							target="mainpage"><img src="Graphics/contact me1.gif" border=0></a></td>
+				</tr>
+
+</body>
+
+</HTML>

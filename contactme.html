@@ -1,0 +1,101 @@
+<html>
+
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<head>
+  <title>Frame Layout></title>
+</head>
+
+<body background="wood.jpg">
+  <table background="wood.jpg" width=100% bordercolor="silver" borderleft='100' borderright='100'>
+    <!-- Center Column -->
+    <td>
+      <table background="nisipiu.jpg">
+        <tr>
+          <td colspan=2 align=center>
+            <H1> Contactati-ma!!!</H1>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" align=center>Salut! Sper ca ti-a placut pagina mea web despre Salvador Dal�. Daca ai
+            comentarii/ intrebari despre cum mi-am improvizat pagina, sau te intereseaza Salvador Dal�, te rog
+            trimite-mi un <A HREF="mailto:DiaconescuElena@yahoo.com" color="green"><img src="graphics/email.gif"
+                width="44" height="18"></A>. Daca folosesti Netscape, poti sa folosesti formularul de mai jos ca sa
+            imi trimiti un e-mail.
+          </td>
+          <td valign="middle" align=center> <IMG SRC="graphics/pic25.jpg" HEIGHT=220 WIDTH=300> </td>
+        </tr>
+        <tr>
+          <td align=center valign="middle">
+            <textarea name="feedback" rows=10 cols=40>Scrie comentariile tale aici...</textarea><br>
+            <INPUT TYPE="submit" VALUE="Expediaza ">
+            <INPUT TYPE="submit" value="Sterge"></td>
+          <td valign="middle" align=center>
+            <IMG SRC="graphics/typefast.gif" width="100" height="100"><br>
+          </td>
+        </tr>
+      </table>
+      <br><br>
+    </td>
+    <td align=right valign=top background="Prairie wind.bmp" width=120>
+      <!-- Right Column -->
+      <table align=right border=1 width=100 cellpadding=10 BGCOLOR=#000000>
+        <tr>
+          <td ALIGN=CENTER valign=center align=center>
+            <P ALIGN="LEFT"> <img src="Graphics/ro.gif" width="78" height="34">
+          </td>
+        </tr>
+        <td ALIGN=right valign=right align=right> <img src="Graphics/logo.gif"></td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a onmouseOver="document.images[5].src='graphics/salut1.gif'"
+              onmouseOut="document.images[5].src='graphics/welcome1.gif'" href="Welcome1.html" target="mainpage">
+              <img src="Graphics/welcome1.gif" border=0></a>
+          </td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a a onmouseOver="document.images[6].src='graphics/arta1.gif'"
+              onmouseOut="document.images[6].src='graphics/art1.gif'" href="Art1.html" target="mainpage"><img
+                src="Graphics/art1.gif" border=0></a>
+          </td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a a onmouseOver="document.images[7].src='graphics/istorie1.gif'"
+              onmouseOut="document.images[7].src='graphics/history1.gif'" href="History1.html" target="mainpage"><img
+                src="Graphics/history1.gif" border=0></a>
+          </td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a a onmouseOver="document.images[8].src='graphics/contact1.gif'"
+              onmouseOut="document.images[8].src='graphics/contact me1.gif'" href="Contactme.html"
+              target="mainpage"><img src="Graphics/contact me1.gif" border=0></a>
+          </td>
+        </tr>
+      </table>
+</body>
+
+</HTML>

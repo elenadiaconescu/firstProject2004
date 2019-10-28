@@ -1,0 +1,46 @@
+<HTML>
+
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<HEAD>
+  <TITLE> Dali 1</TITLE>
+</HEAD>
+
+<body background="wood.jpg" vlink="#FF00FF">
+  <br>
+  <p align="center"><a href="art1.html"><b><u>back</u></b></a><br><br>
+
+    <table align="center" border=0 width=340 align=left background="nisipiu.jpg">
+      <tr>
+        <td>
+
+          <p align="center"><img SRC="graphics\dali c.jpg" HEIGHT=550 WIDTH=350>
+            <p align=center>
+              <font color=#000000><b><b>Iisus Hristos pe cruce <br>(1951, Muzeul Sf Mungo, Glasgow)</b></b></font>
+            </p>
+        </td>
+      </tr>
+    </table>
+</BODY>
+
+</HTML>

@@ -1,0 +1,138 @@
+<HTML>
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<HEAD>
+  <TITLE>toolbar, version #1</TITLE>
+
+  <script language="JavaScript">
+    // Funny text script by Bart Jellema
+    var hellotext = "Diaconescu Elena clasa a XIIa A 2004 Colegiul National 'Gheorghe Vranceanu'"
+    var thetext = ""
+    var started = false
+    var step = 0
+    var times = 1
+
+    function welcometext() {
+      times--
+      if (times == 0) {
+        if (started == false) {
+          started = true;
+          window.status = hellotext;
+          setTimeout("anim()", 1);
+        }
+        thetext = hellotext;
+      }
+    }
+
+    function showstatustext(txt) {
+      thetext = txt;
+      setTimeout("welcometext()", 4000)
+      times++
+    }
+
+    function anim() {
+      step++
+      if (step == 7) { step = 1 }
+      if (step == 1) { window.status = '>===' + thetext + '===<' }
+      if (step == 2) { window.status = '=>==' + thetext + '==<=' }
+      if (step == 3) { window.status = '>=>=' + thetext + '=<=<' }
+      if (step == 4) { window.status = '=>=>' + thetext + '<=<=' }
+      if (step == 5) { window.status = '==>=' + thetext + '=<==' }
+      if (step == 6) { window.status = '===>' + thetext + '<===' }
+      setTimeout("anim()", 200);
+    }
+// Funny text script by Bart Jellema -->
+  </script>
+</HEAD>
+
+<BODY>
+
+  <body onLoad="welcometext()" background="wood.jpg">
+    <bgsound src="vangelis.avi.mp3" loop=0>
+      <tr valign=top>
+        <table border=1 width=100 cellpadding=10 BGCOLOR=#000000>
+          <tr>
+            <td ALIGN=CENTER valign=center align=center>
+              <P ALIGN="LEFT"> <img src="Graphics/mb.GIF" width="78" height="34">
+            </td>
+            </A>
+            </P>
+          </tr>
+          <tr>
+            <td ALIGN=CENTER valign=center align=center>
+              <P ALIGN="LEFT"> <img src="graphics/logo.gif">
+            </td>
+            </p>
+          </tr>
+          <tr>
+            <td ALIGN=CENTER valign="MIDDLE" align=center>
+              <P ALIGN="LEFT">
+
+                <A onmouseOver="document.images[2].src='graphics/salut.gif'"
+                  onmouseOut="document.images[2].src='graphics/welcome.gif'" href="Framewelcome1.html"
+                  target="mainpage">
+                  <IMG SRC="graphics/WELCOME.gif" border=0>
+                </a>
+            </td>
+            </p>
+          </tr>
+          <tr>
+            <td ALIGN=CENTER valign="MIDDLE" align=center>
+              <P ALIGN="LEFT">
+                <a onmouseOver="document.images[3].src='graphics/arta.gif'"
+                  onmouseOut="document.images[3].src='graphics/art.gif'" href="Frameart1.html" target="mainpage">
+                  <IMG SRC="graphics/art.gif" border=0>
+                </a>
+            </td>
+            </p>
+          </tr>
+          <tr>
+            <td ALIGN=CENTER valign="MIDDLE" align=center>
+              <P ALIGN="LEFT">
+                <A onmouseOver="document.images[4].src='graphics/istorie.gif'"
+                  onmouseOut="document.images[4].src='graphics/history.gif'" href="framehistory1.html"
+                  target="mainpage">
+                  <IMG SRC="graphics/history.gif" border=0>
+                </a>
+            </td>
+            </p>
+          </tr>
+          <tr>
+            <td ALIGN=CENTER valign="MIDDLE" align=center>
+              <P ALIGN="LEFT">
+                <A onmouseOver="document.images[5].src='graphics/contact.gif'"
+                  onmouseOut="document.images[5].src='graphics/contact_me.gif'" href="FrameContactMe.html"
+                  target="mainpage">
+                  <IMG SRC="graphics/contact_me.gif" border=0>
+                </a>
+
+            </td>
+            </p>
+          </tr>
+          </A>
+        </table>
+        <br><br><br><br>
+        <td align=center><img src="graphics/javaman.gif" width=70 height=70></td><br>
+  </body>
+
+</HTML>

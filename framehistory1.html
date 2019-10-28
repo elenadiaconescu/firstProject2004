@@ -1,0 +1,101 @@
+<html>
+
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<head>
+  <title>Frame Layout></title>
+</head>
+
+<body background="wood.jpg">
+  <table background="wood.jpg" width=100% bordercolor="silver">
+    <!-- Center Column -->
+    <td>
+      <center>
+        <table background="nisipiu.jpg">
+          <tr>
+            <td colspan=2 align=center>
+              <H1> Dal� - A brief history</H1>
+            </td>
+          </tr>
+          <tr>
+            <td align=center valign="middle"><A HREF="Dali 5BIG.HTML"> <IMG SRC="graphics\Dali 5.jpg" HEIGHT=220
+                  WIDTH=300></A></td>
+            <td valign="middle" align=center>Dal� was born in Figueras, Catalonia, on May 11, 1904. His father, a
+              notary, was an atheist and his mother was a devout Catholic. An elder brother, also called Salvador, had
+              died nine months before Dal�'s birth, and he later wrote that he identified morbidly with his namesake and
+              had an overwhelming desire for attention. </td>
+          <tr>
+            <td valign="middle" align=center>Dal� was married with Gala, the love of his life. He died in Figueras on
+              January 25, 1989, aged 84. There are two museums dedicated to his work: the Teatre-Museu Dal�, established
+              in Figueras in 1974, and the Salvador Dal� Museum, in St Petersburg, Ohio, established in
+              1982.<br><br>"Dal�, Salvador," Microsoft(R) Encarta(R) 98 Encyclopedia. (c) 1993-1997 Microsoft
+              Corporation. All rights reserved.</td>
+            <td valign="middle" align=center><A HREF="Dali 6BIG.HTML"> <IMG SRC="graphics\Dali 6.jpg" HEIGHT=300
+                  WIDTH=220></A></td>
+          </tr>
+        </table>
+      </center>
+      <br><br>
+    </td>
+
+    <td align=right valign=top background="Prairie wind.bmp" width=120>
+      <!-- Right Column -->
+      <table border=1 width=100 cellpadding=10 BGCOLOR=#000000>
+        <tr>
+          <td ALIGN=CENTER valign=center align=center>
+            <P ALIGN="LEFT"> <img src="Graphics/ro.gif" width="78" height="34">
+          </td>
+        </tr>
+        <td ALIGN=right valign=right align=right> <img src="Graphics/logo.gif"></td>
+
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="Welcome1.html" target="mainpage"><img
+                src="Graphics/welcome1.gif" border=0></a></td>
+
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="Art1.html" target="mainpage"><img src="Graphics/art1.gif"
+                border=0></a></td>
+
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="History1.html" target="mainpage"><img
+                src="Graphics/history1.gif" border=0></a></td>
+
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="Contactme.html" target="mainpage"><img
+                src="Graphics/contact me1.gif" border=0></a></td>
+
+        </tr>
+      </table>
+  </table>
+  </td>
+  <MARQUEE WIDTH=565 SPEED=1>
+    <font face="Times New Roman" COLOR=#EBEB07><B><B> " IT IS NOT IMPORTANT WHAT YOU DO AS LONG AS YOU ARE IN HEADLINES
+          "- SALVADOR Dal� (1904-1989)</B></B> </FONT>
+  </MARQUEE>
+</body>
+
+</HTML>

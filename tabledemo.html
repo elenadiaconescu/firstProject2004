@@ -1,0 +1,76 @@
+<HTML>
+<SCRIPT language=JavaScript>
+	var message = "Copyright�2004 Salvador Dali";
+	function click(e) {
+		if (document.all) {
+			if (event.button == 2) {
+				alert(message);
+				return false;
+			}
+		}
+		if (document.layers) {
+			if (e.which == 3) {
+				alert(message);
+				return false;
+			}
+		}
+	}
+	if (document.layers) {
+		document.captureEvents(Event.MOUSEDOWN);
+	}
+	document.onmousedown = click;
+</SCRIPT>
+
+<HEAD>
+	<TITLE> Table Demo Example </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+		<TABLE BORDER=0 WIDTH="600">
+			<TR>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/logo.gif" WIDTH=80 HEIGHT=30> </TD>
+				<TD COLSPAN="2">
+					<H1>Table Demo</H1>
+				</TD>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/logo.gif" WIDTH=80 HEIGHT=30> </TD>
+
+			</TR>
+			<TR>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/welcome.gif" WIDTH=80 HEIGHT=30> </TD>
+				<TD ROWSPAN="2">This is where your text would appear. Note: The table width is set to 600 pixels. This
+					is where your text would appear. Note: The table width is set to 600 pixels.This is where your text
+					would appear. Note: The table width is set to 600 pixels.This is where your text would appear. Note:
+					The table width is set to 600 pixels.This is where your text would appear. Note: The table width is
+					set to 600 pixels.This is where your text would appear. Note: The table width is set to 600
+					pixels.This is where your text would appear.</TD>
+				<TD ROWSPAN="2"><IMG SRC="graphics/Dali 1.jpg" WIDTH=250 HEIGHT=220> </TD>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/welcome.gif" WIDTH=80 HEIGHT=30> </TD>
+			</TR>
+			<TR>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/welcome.gif" WIDTH=80 HEIGHT=30> </TD>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/welcome.gif" WIDTH=80 HEIGHT=30> </TD>
+			</TR>
+			<TR>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/history.gif" WIDTH=80 HEIGHT=30> </TD>
+				<TD ROWSPAN="2"><IMG SRC="graphics/DALI 3.jpg" WIDTH=250 HEIGHT=220> </TD>
+				<TD ROWSPAN="2">This is where your text would appear. Note: The table width is set to 600 pixels. This
+					is where your text would appear. Note: The table width is set to 600 pixels.This is where your text
+					would appear. Note: The table width is set to 600 pixels.This is where your text would appear. Note:
+					The table width is set to 600 pixels.This is where your text would appear. Note: The table width is
+					set to 600 pixels.This is where your text would appear. Note: The table width is set to 600
+					pixels.This is where your text would appear.</TD>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/history.gif" WIDTH=80 HEIGHT=30> </TD>
+			</TR>
+			<TR>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/contact_me.gif" WIDTH=80 HEIGHT=30> </TD>
+				<TD ALIGN=Center VALIGN=Middle><IMG SRC="graphics/contact_me.gif" WIDTH=80 HEIGHT=30> </TD>
+			</TR>
+			<TR>
+				<TD></TD>
+				<TD></TD>
+				<TD></TD>
+			</TR>
+		</TABLE>
+</BODY>
+
+</HTML>

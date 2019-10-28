@@ -1,0 +1,107 @@
+<html>
+
+
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<head>
+  <title>Frame Layout></title>
+</head>
+
+<body background="wood.jpg">
+  <table background="wood.jpg" width=100% bordercolor="silver">
+    <!-- Center Column -->
+    <td>
+      <center>
+        <table background="nisipiu.jpg">
+          <tr>
+
+          <tr>
+            <td colspan=2 align=center>
+              <H1> Salvador Dal�'s Art</H1>
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle" align=center> Dal� showed eccentricity and also talent in art, beginning to paint when
+              he was six. In 1921 Dal� began studying at the San Fernando Academy of Fine Arts in Madrid; During the
+              1930s Dal� painted the majority of the pictures for which he is now most famous-works in which he used a
+              detailed, realistic technique to create bizarrely imaginative scenes or "hand-painted dream photographs",
+              as he called them. They include some of the most celebrated Surrealist images, such as The Persistence of
+              Memory (1931, Museum of Modern Art, New York)</td>
+
+            <td align=center valign="middle"><a href="dali 7 big.html"><IMG SRC="graphics\dali 7.jpg" HEIGHT=220
+                  WIDTH=300></a></td>
+          </tr>
+
+          <tr>
+            <td valign="middle" align=center><a href="dali c big.html"> <IMG SRC="graphics\dali c.jpg" HEIGHT=300
+                  WIDTH=220></a></td>
+            <td valign="middle" align=center> In 1948 Dal� returned to Spain. From this time he lived mainly at Port
+              Lligat, near his birthplace, but he often visited New York and Paris. His later paintings often feature
+              his wife and muse Gala and are sometimes strongly sexual, but he also painted religious works, one of the
+              most famous of which Is Christ of St John of the Cross (1951, St Mungo Museum, Glasgow).8,200 ponds was
+              paid for it. </td>
+          </tr>
+
+        </table>
+      </center>
+      </center>
+
+      <br><br>
+    </td>
+
+    <td align=right valign=top background="Prairie wind.bmp" width=120>
+      <!-- Right Column -->
+      <table border=1 width=100 cellpadding=10 BGCOLOR=#000000>
+        <tr>
+          <td ALIGN=CENTER valign=center align=center>
+            <P ALIGN="LEFT"> <img src="Graphics/ro.gif" width="78" height="34">
+          </td>
+        </tr>
+        <td ALIGN=right valign=right align=right> <img src="Graphics/logo.gif"></td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="Welcome1.html" target="mainpage"><img
+                src="Graphics/welcome1.gif" border=0></a></td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="Art1.html" target="mainpage"><img src="Graphics/art1.gif"
+                border=0></a></td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="History1.html" target="mainpage"><img
+                src="Graphics/history1.gif" border=0></a></td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right> <a href="Contactme.html" target="mainpage"><img
+                src="Graphics/contact me1.gif" border=0></a></td>
+        </tr>
+      </table>
+  </table>
+  </td>
+  <MARQUEE WIDTH=565 SPEED=1>
+    <font face="Times New Roman" COLOR=#EBEB07><B><B> " TO BE A SURREALISTE IS LIKE SPENDING YOUR TIME PAINTING NOTHING
+          BUT EYES AND NOSES "- SALVADOR Dal� (1904-1989)</B></B> </FONT>
+  </MARQUEE>
+</body>
+
+</HTML>

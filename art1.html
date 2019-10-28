@@ -1,0 +1,120 @@
+<html>
+
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<head>
+  <title>Frame Layout></title>
+</head>
+
+<body background="wood.jpg">
+  <table background="wood.jpg" width=100% bordercolor="silver">
+    <!-- Center Column -->
+    <td>
+      <table background="nisipiu.jpg">
+        <tr>
+          <br>
+        <tr>
+          <td colspan=2 align=center>
+            <H1> Despre arta lui Salvador Dali</H1>
+          </td>
+        </tr>
+
+        <tr>
+          <td valign="middle" align=center>Dal� a dovedit excentricitate si de asemenea talent in arta, incepand sa
+            picteze de la varsta de 6 ani. In 1921 Dal� incepe sa studieze la San Fernando, Academia de Arte Fine din
+            Madrid. In timpul anului 1930 Dal� a pictat majoritatea tablourilor pentru care acum este faimos. In ele a
+            folosit detaliul, o tehnica realista pentru a crea bizarele scene imaginative sau "hand-painted dream
+            photograph" ( "maini-pictate vis fotografia"),cum le-a numit el. Ele includ cateva din cele mai celebre
+            suprarealiste imagini, cum este "Persistenta Memoriei"(1931, Muzeul Artelor Moderne,New York)
+          </td>
+
+          <td align=center valign="middle">
+            <a href="daliPMbig.html">
+              <IMG SRC="graphics\dali 7.jpg" HEIGHT=220 WIDTH=300>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td valign="middle" align=center><a href="dali ch big.html"> <IMG SRC="graphics\dali c.jpg" HEIGHT=220
+                WIDTH=170></a></td>
+          <td valign="middle" align=center>In 1948 Dal� s-a intors in Spania. Din acest moment el locuieste la Port
+            Lligat, aproape de orasul natal, dar uneori vizita New York-ul si Paris-ul. Tablourile lui de mai tarziu
+            adesea o infatiseaza pe sotia sa si muza Gala si uneori sunt puternic sexuale. El a pictat de asemenea
+            tablouri religioase, cel mai faimos fiind "Is Christ of John of the Cross" (1951, St Mungo Museum,
+            Glasgow).A fost cumparat cu 8.200 lire sterline. 
+          </td>
+        </tr>
+      </table><br><br>
+    </td>
+    <td align=right valign=top background="Prairie wind.bmp" width=120>
+      <!-- Right Column -->
+      <table align=right border=1 width=100 cellpadding=10 BGCOLOR=#000000>
+        <tr>
+          <td ALIGN=CENTER valign=center align=center>
+            <P ALIGN="LEFT"> <img src="Graphics/ro.gif" width="78" height="34">
+          </td>
+        </tr>
+        <td ALIGN=right valign=right align=right> 
+          <img src="Graphics/logo.gif">
+        </td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a onmouseOver="document.images[4].src='graphics/salut1.gif'"
+              onmouseOut="document.images[4].src='graphics/welcome1.gif'" href="Welcome1.html" target="mainpage">
+              <img src="Graphics/welcome1.gif" border=0></a>
+            </td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a a onmouseOver="document.images[5].src='graphics/arta1.gif'"
+              onmouseOut="document.images[5].src='graphics/art1.gif'" href="Art1.html" target="mainpage"><img
+                src="Graphics/art1.gif" border=0></a>
+              </td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a a onmouseOver="document.images[6].src='graphics/istorie1.gif'"
+              onmouseOut="document.images[6].src='graphics/history1.gif'" href="History1.html" target="mainpage"><img
+                src="Graphics/history1.gif" border=0></a>
+              </td>
+        </tr>
+        <tr>
+          <td ALIGN=right valign="right" align=right>
+            <a a onmouseOver="document.images[7].src='graphics/contact1.gif'"
+              onmouseOut="document.images[7].src='graphics/contact me1.gif'" href="Contactme.html"
+              target="mainpage"><img src="Graphics/contact me1.gif" border=0></a>
+            </td>
+        </tr>
+      </table>
+  </table>
+  <MARQUEE WIDTH=565 SPEED=1>
+    <font face="Times New Roman" COLOR=#EBEB07><B><B> " SA FII UN SUPRAREALIST INSEAMNA SA-TI PETRECI TIMPUL PICTAND
+          NUMAI OCHI SI NASURI " - SALVADOR Dal� (1904-1989)</B></B> </FONT>
+  </MARQUEE>
+  </td>
+
+</body>
+
+</HTML>

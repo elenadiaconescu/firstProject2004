@@ -1,0 +1,109 @@
+<html>
+
+<SCRIPT language=JavaScript>
+	var message = "Copyright�2004 Salvador Dali";
+	function click(e) {
+		if (document.all) {
+			if (event.button == 2) {
+				alert(message);
+				return false;
+			}
+		}
+		if (document.layers) {
+			if (e.which == 3) {
+				alert(message);
+				return false;
+			}
+		}
+	}
+	if (document.layers) {
+		document.captureEvents(Event.MOUSEDOWN);
+	}
+	document.onmousedown = click;
+</SCRIPT>
+
+<head>
+	<title>Frame Layout></title>
+</head>
+
+<body background="wood.jpg">
+	<table background="wood.jpg" width=100% bordercolor="silver">
+		<!-- Center Column -->
+		<td>
+			<center>
+				<table>
+					<tr>
+						<td align=left>
+							<!--  This is where the table begins  -->
+							<table background="nisipiu.jpg">
+								<!-- The first row begins, containing a logo graphic, and the heading of the web page -->
+								<tr>
+									<td colspan=2 align=center>
+										<H1> Pagina web a lui Salvador Dal� </H1><br>
+									</td>
+								</tr>
+								<!--  The second row begins here, containing  a picture and some content -->
+								<tr>
+									<td align=center valign="MIDDLE"><A HREF="DALI 3BIG.HTML"> <IMG
+												SRC="graphics\DALI 3.jpg" HEIGHT=220 WIDTH=300></A></td>
+									<td valign="MIDDLE" align=left>Bine ati venit in vizita sit-ului meu, care l-am
+										dedicat lui Salvador Dal�. Pentru a invata mai multe despre istoria lui Dal�,
+										apasati pe butonul "ISTORIE" de pe marginea paginii. Daca sunteti interesati
+										despre opinii critice asupra artei lui apasati pe butonul "ARTA".<BR>Pentru a
+										lua legatura cu mine, apasati pe butonul "CONTACT". Puteti de asemenea sa-mi
+										trimiteti e-mail.</td>
+								</tr>
+								<!-- The third row begins here, containing, some content and a picture. Notice how the text and pictures are aligned -->
+								<tr>
+									<td valign="MIDDLE" align=left>Salvador Dal� a fost un artist spaniol de-a lungul
+										secolului al XX-lea( a pictat din 1930 - 1986). Imi place munca lui pentru
+										calitatea suprarealista.<BR>El a fost un pictor, dramaturg, designer, sculptor,
+										regizor, talentat pentru publicitate, publicitate care l-a facut o celebritate
+										internationala. Multi critici cred ca cele mai bune lucrari facute la inceputul
+										carierei sale l-au facut cunoscut.</td>
+									<td valign="MIDDLE" align=center><A HREF="DALI 4BIG.HTML"> <IMG
+												SRC="graphics\DALI 4.jpg" HEIGHT=220 WIDTH=300></A></td>
+								</tr>
+							</table>
+			</center>
+			<br><br>
+		</td>
+		<td align=right valign=top background="Prairie wind.bmp" width=120>
+			<!-- Right Column -->
+			<table align=right border=1 width=100 cellpadding=10 BGCOLOR=#000000>
+				<tr>
+					<td ALIGN=CENTER valign=center align=center>
+						<P ALIGN="LEFT"> <img src="Graphics/ro.gif" width="78" height="34">
+					</td>
+				</tr>
+				<td ALIGN=right valign=right align=right> <img src="Graphics/logo.gif"></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a onmouseOver="document.images[4].src='graphics/salut1.gif'"
+							onmouseOut="document.images[4].src='graphics/welcome1.gif'" href="Welcome1.html"
+							target="mainpage">
+							<img src="Graphics/welcome1.gif" border=0></a></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a a onmouseOver="document.images[5].src='graphics/arta1.gif'"
+							onmouseOut="document.images[5].src='graphics/art1.gif'" href="Art1.html"
+							target="mainpage"><img src="Graphics/art1.gif" border=0></a></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a a onmouseOver="document.images[6].src='graphics/istorie1.gif'"
+							onmouseOut="document.images[6].src='graphics/history1.gif'" href="History1.html"
+							target="mainpage"><img src="Graphics/history1.gif" border=0></a></td>
+				</tr>
+				<tr>
+					<td ALIGN=right valign="right" align=right>
+						<a a onmouseOver="document.images[7].src='graphics/contact1.gif'"
+							onmouseOut="document.images[7].src='graphics/contact me1.gif'" href="Contactme.html"
+							target="mainpage"><img src="Graphics/contact me1.gif" border=0></a></td>
+				</tr>
+			</table>
+</body>
+
+</HTML>

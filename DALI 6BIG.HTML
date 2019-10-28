@@ -1,0 +1,43 @@
+<HTML>
+
+<SCRIPT language=JavaScript>
+  var message = "Copyright�2004 Salvador Dali";
+  function click(e) {
+    if (document.all) {
+      if (event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+    if (document.layers) {
+      if (e.which == 3) {
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+  }
+  document.onmousedown = click;
+</SCRIPT>
+
+<HEAD>
+  <TITLE> Dali 1</TITLE>
+</HEAD>
+
+<body background="wood.jpg" vlink="#FF00FF">
+  <br>
+  <p align="center"><a href="framehistory1.html">
+      <font color="white"><b><u>back</u></b>
+    </a><br><br></font>
+    <table align="center" border=0 width=390 align=left background="nisipiu.jpg">
+      <tr>
+        <td>
+          <p align="center"><img SRC="graphics\dali 6.jpg" HEIGHT=590 WIDTH=380>
+        </td>
+      </tr>
+    </table>
+</body>
+
+</HTML>
